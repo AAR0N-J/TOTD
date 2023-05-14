@@ -6,14 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {{ bootstrap.load_css() }}
     <title>TOTD</title>
+    <style>
+        h1 {
+            padding: 20px; 
+            color: aqua;
+        }
+        .footer {
+            background-color: #f5f5f5;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-  <h1 class="text-center"> TRENDS OF THE DAY </h1>
+  <h1 class="text-center bg-secondary p4 "> TRENDS OF THE DAY </h1>
   <div class="container my-5">
     <div class="row">
       <div class="col-md-4 mb-4">
         <div class="card">
-          <img src="https://via.placeholder.com/350x150" class="card-img-top" alt="...">
+          <img src="/static/images/google.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Google</h5>
             <p class="card-text">This is a card for Google Trends.</p>
@@ -23,7 +34,7 @@
       </div>
       <div class="col-md-4 mb-4">
         <div class="card">
-          <img src="https://via.placeholder.com/350x150" class="card-img-top" alt="...">
+          <img src="/static/images/youtube.jpeg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Youtube</h5>
             <p class="card-text">This is card for Youtube Trends.</p>
@@ -33,7 +44,7 @@
       </div>
       <div class="col-md-4 mb-4">
         <div class="card">
-          <img src="https://via.placeholder.com/350x150" class="card-img-top" alt="...">
+          <img src="/static/images/twitter.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Twitter</h5>
             <p class="card-text">This is a card for Twitter trends.</p>
@@ -45,7 +56,7 @@
     <div class="row">
       <div class="col-md-4 mb-4">
         <div class="card">
-          <img src="https://via.placeholder.com/350x150" class="card-img-top" alt="...">
+          <img src="/static/images/Facebook.jpeg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Facebook</h5>
             <p class="card-text">This is a card for facebook trends.</p>
@@ -55,7 +66,7 @@
       </div>
       <div class="col-md-4 mb-4">
         <div class="card">
-          <img src="https://via.placeholder.com/350x150" class="card-img-top" alt="...">
+          <img src="/static/images/instagram.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Instagram</h5>
             <p class="card-text">This is card for Instagram Trends.</p>
@@ -65,7 +76,7 @@
       </div>
       <div class="col-md-4 mb-4">
         <div class="card">
-          <img src="https://via.placeholder.com/350x150" class="card-img-top" alt="...">
+          <img src="/static/images/tiktok.jpeg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Tiktok</h5>
             <p class="card-text">This is a card for Tiktok trends.</p>
@@ -73,6 +84,12 @@
           </div>
         </div>
       </div>
+      <footer class="footer bg-secondary">
+        <div class="container">
+          <p>&copy; 2023 Team 7554, CST 205: Multimedia Design and Programming </p>
+          <p>Created by Aaron Johnson, Mikaela Lagumbay, Sebastian Ramos, and Eunice Sosa</p>
+        </div>
+      </footer>
       {{ bootstrap.load_js() }}
 </body>
 </html>
