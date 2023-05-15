@@ -13,6 +13,7 @@ that is in the static folder and all of that including the python file are in on
 4. Run these commands in terminal: flask --app TOTD run --debug
 
 GitHub repository: https://github.com/mikalagumbay/team7554
+
 Trello board: https://trello.com/b/Ck8HdpJG/team-7554-project
 
 Future work:
