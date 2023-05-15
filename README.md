@@ -1,7 +1,6 @@
 ﻿# Final-Project
---- Project Name: TOTD (Trends Of The Day) 
-Team members: Aaron Johnson, Eunice Sosa, Sebastian Ramos, Mikaela Lagumbay
-
+***Project Name: TOTD (Trends Of The Day)***
+***Team members: Aaron Johnson, Eunice Sosa, Sebastian Ramos, Mikaela Lagumbay***
 Class: CST 205 Section 1 - Multimedia Design and Programming
 
 Date: May 18, 2023
