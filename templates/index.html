@@ -38,11 +38,12 @@
     <div class="row">
       <div class="col-md-4 mb-4">
         <div class="card rounded-5">
-          <img src="/static/images/google.jpg" class="card-img-top rounded-5" alt="...">
+          <img src="/static/images/spotify.jpg" class="card-img-top rounded-5" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Google</h5>
-            <p class="card-text">Top searched term <a href="https://trends.google.com/trends/trendingsearches/daily?geo=US&hl=en-US">here</a></p>
-            <a href="{{ url_for('googleTrends') }}" class="btn btn-primary rounded-5">Learn more</a>
+            <h5 class="card-title">Spotify</h5>
+            <p class="card-text">Top played Artist of the day: {{ spotify }}</p>
+            <p class="card-text">Top played Song: </p>
+            <a href="{{ url_for('spotifyTrends')}}" class="btn btn-primary rounded-5">Learn more</a>
           </div>
         </div>
       </div>
