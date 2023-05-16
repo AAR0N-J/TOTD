@@ -29,10 +29,23 @@ Work by Mikaela Lagumbay:
 
 from flask import Flask, render_template
 from flask_bootstrap import Bootstrap5
+from urllib.request import urlopen
+from bs4 import BeautifulSoup
+import ssl
+import requests
+from PIL import Image
 
 app = Flask(__name__)
 bootstrap = Bootstrap5(app)
 
+# API Section
+
+#END API Section
+
 @app.route('/')
 def home():
     return render_template('index.html')
+
+@app.route('/googleTrends')
+def googleTrends():
+    return render_template('googleTrends.html')

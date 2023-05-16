@@ -7,9 +7,20 @@
     {{ bootstrap.load_css() }}
     <title>TOTD</title>
     <style>
+        @keyframes rainbow {
+            0%   { color: red; }
+            14%  { color: orange; }
+            28%  { color: yellow; }
+            42%  { color: green; }
+            57%  { color: blue; }
+            71%  { color: indigo; }
+            85%  { color: violet; }
+            100% { color: red; }
+        }
         h1 {
             padding: 20px; 
-            color: aqua;
+            font-size: 50px;
+            animation: rainbow 4s linear infinite;
         }
         .footer {
             background-color: #f5f5f5;
@@ -20,36 +31,38 @@
 </head>
 <body>
     <!-- Cards for each platform organized by 2 rows of 3 columns -->
-  <h1 class="text-center bg-secondary p4 "> TRENDS OF THE DAY </h1>
+    <div class="p-4">
+        <h1 class="text-center bg-secondary p-5  rounded-5"> TRENDS OF THE DAY </h1>
+    </div>
   <div class="container my-5">
     <div class="row">
       <div class="col-md-4 mb-4">
-        <div class="card">
-          <img src="/static/images/google.jpg" class="card-img-top" alt="...">
+        <div class="card rounded-5">
+          <img src="/static/images/google.jpg" class="card-img-top rounded-5" alt="...">
           <div class="card-body">
             <h5 class="card-title">Google</h5>
-            <p class="card-text">This is a card for Google Trends.</p>
-            <a href="#" class="btn btn-primary">Learn more</a>
+            <p class="card-text">Top searched term <a href="https://trends.google.com/trends/trendingsearches/daily?geo=US&hl=en-US">here</a></p>
+            <a href="{{ url_for('googleTrends') }}" class="btn btn-primary rounded-5">Learn more</a>
           </div>
         </div>
       </div>
       <div class="col-md-4 mb-4">
-        <div class="card">
-          <img src="/static/images/youtube.jpeg" class="card-img-top" alt="...">
+        <div class="card rounded-5">
+          <img src="/static/images/youtube.jpeg" class="card-img-top rounded-5" alt="...">
           <div class="card-body">
             <h5 class="card-title">Youtube</h5>
             <p class="card-text">This is card for Youtube Trends.</p>
-            <a href="#" class="btn btn-primary">Learn more</a>
+            <a href="#" class="btn btn-primary rounded-5">Learn more</a>
           </div>
         </div>
       </div>
       <div class="col-md-4 mb-4">
-        <div class="card">
-          <img src="/static/images/twitter.jpg" class="card-img-top" alt="...">
+        <div class="card rounded-5">
+          <img src="/static/images/twitter.jpg" class="card-img-top rounded-5" alt="...">
           <div class="card-body">
             <h5 class="card-title">Twitter</h5>
             <p class="card-text">This is a card for Twitter trends.</p>
-            <a href="#" class="btn btn-primary">Learn more</a>
+            <a href="#" class="btn btn-primary rounded-5">Learn more</a>
           </div>
         </div>
       </div>
@@ -57,36 +70,36 @@
     <!-- Second row starts -->
     <div class="row">
       <div class="col-md-4 mb-4">
-        <div class="card">
-          <img src="/static/images/Facebook.jpeg" class="card-img-top" alt="...">
+        <div class="card rounded-5">
+          <img src="/static/images/Facebook.jpeg" class="card-img-top rounded-5" alt="...">
           <div class="card-body">
             <h5 class="card-title">Facebook</h5>
             <p class="card-text">This is a card for facebook trends.</p>
-            <a href="#" class="btn btn-primary">Learn more</a>
+            <a href="#" class="btn btn-primary rounded-5">Learn more</a>
           </div>
         </div>
       </div>
       <div class="col-md-4 mb-4">
-        <div class="card">
-          <img src="/static/images/instagram.jpg" class="card-img-top" alt="...">
+        <div class="card rounded-5">
+          <img src="/static/images/instagram.jpg" class="card-img-top rounded-5" alt="...">
           <div class="card-body">
             <h5 class="card-title">Instagram</h5>
             <p class="card-text">This is card for Instagram Trends.</p>
-            <a href="#" class="btn btn-primary">Learn more</a>
+            <a href="#" class="btn btn-primary rounded-5">Learn more</a>
           </div>
         </div>
       </div>
       <div class="col-md-4 mb-4">
-        <div class="card">
-          <img src="/static/images/tiktok.jpeg" class="card-img-top" alt="...">
+        <div class="card rounded-5">
+          <img src="/static/images/tiktok.jpeg" class="card-img-top rounded-5" alt="...">
           <div class="card-body">
             <h5 class="card-title">Tiktok</h5>
             <p class="card-text">This is a card for Tiktok trends.</p>
-            <a href="#" class="btn btn-primary">Learn more</a>
+            <a href="#" class="btn btn-primary rounded-5">Learn more</a>
           </div>
         </div>
       </div>
-      <footer class="footer bg-secondary">
+      <footer class="footer bg-secondary rounded-5">
         <div class="container">
           <p>&copy; 2023 Team 7554, CST 205: Multimedia Design and Programming </p>
           <p>Created by Aaron Johnson, Mikaela Lagumbay, Sebastian Ramos, and Eunice Sosa</p>
