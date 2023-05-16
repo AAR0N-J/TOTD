@@ -20,7 +20,8 @@ Trello board: https://trello.com/b/Ck8HdpJG/team-7554-project
 
 1. add more detailed trends
 2. add more platforms
-3. make the website more interactive such as being able to play and see the trends directly 
-on the webpage instead of just words and links
+3. make the website more interactive such as being able to play and see the trends, such as pictures and videos
+directly on the webpage instead of just words and links
 4. allow the user to change the background to trending colors in their own browser
 5. take the averge of all trends and make a Trends of the whole internet card at the top of the home page
+6. Be able to organize the trends by country or geographical area
