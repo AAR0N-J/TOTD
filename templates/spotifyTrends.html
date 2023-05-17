@@ -40,15 +40,20 @@
             <h5 class="card-title">Other Spotify Trends:</h5>
             <p class="card-text">Top song of the day: {{spotify['song']}} by {{spotify['artist']}} </p>
             <audio controls>
-                <source src="{{spotify['itunes']['previewUrl']}}" type="audio/mpeg">
+                <source src="{{spotify['itunes_song'][0]['previewUrl']}}" type="audio/mpeg">
                 Your browser does not support the audio element.
             </audio>
             <p class="card-text">Top song of all time: {{spotify['top_song_title']}} by {{spotify['top_song_artist']}}</p>
             <audio controls>
-                <source src="{{spotify['itunes']['previewUrl']}}" type="audio/mpeg">
+                <source src="{{spotify['itunes_top'][0]['previewUrl']}}" type="audio/mpeg">
                 Your browser does not support the audio element.
             </audio>
             <p class="card-text">Top artist of all time: {{spotify['top_artist']}}</p>
+            <audio controls>
+                <source src="{{spotify['itunes_top_artist'][0]['previewUrl']}}" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <br><br>
             <a href="{{ url_for('home') }}" class="btn btn-primary rounded-5">Home</a>
           </div>
         </div>
