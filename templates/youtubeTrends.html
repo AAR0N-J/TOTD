@@ -39,10 +39,12 @@
             <div class="card-body">
                 <div id="video-container">
                     <h2>#1 Trending: {{ youtube.title }}</h2>
+                    <br>
                     <a href="https://www.youtube.com/watch?v={{ youtube.video_id }}">
                          <img src="{{ youtube.thumbnail }}" alt="{{ youtube.title }}" style="width: 400px; height: 300px;">
                     </a>
                 </div>
+                <br><br>
             <a href="{{ url_for('home') }}" class="btn btn-primary rounded-5">Home</a>
             </div>
         </div>
