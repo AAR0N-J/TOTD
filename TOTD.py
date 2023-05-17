@@ -141,3 +141,15 @@ def spotifyTrends():
 @app.route('/youtube_trends')
 def youtube_trends():
     return render_template('youtubeTrends.html', youtube=youtube_trending)
+
+@app.route('/hashtags')
+def hashtags():
+    trending_hashtags = [
+        'hashtag1', 'hashtag2', 'hashtag3', 'hashtag4', 'hashtag5',
+        'hashtag6', 'hashtag7', 'hashtag8', 'hashtag9', 'hashtag10',
+        'hashtag11', 'hashtag12', 'hashtag13', 'hashtag14', 'hashtag15',
+        'hashtag16', 'hashtag17', 'hashtag18', 'hashtag19', 'hashtag20',
+        'hashtag21', 'hashtag22', 'hashtag23', 'hashtag24', 'hashtag25',
+        'hashtag26', 'hashtag27', 'hashtag28', 'hashtag29', 'hashtag30'
+    ]
+    return render_template('hashtags.html', hashtags=trending_hashtags)
