@@ -51,13 +51,22 @@ top_artist = spotify_top_soup.find_all('td')[0].get_text()
 spotify_song_site = 'https://kworb.net/spotify/toplists.html'
 spotify_song_soup = BeautifulSoup(urlopen(spotify_song_site).read(), 'html.parser')
 top_song = spotify_song_soup.find_all('td')[1].get_text().split('-')
+
+it = spotify_top[1]
+
+itunes_api = 'https://itunes.apple.com/search?term={itunes_term}'
+itunes_req = requests.get(itunes_api)
+itunes_data = itunes_req.json()
+
 spotify_info = {
     'song' : spotify_top[1],
     'artist' : spotify_top[0],
     'top_artist' : top_artist,
     'top_song_title' : top_song[1],
-    'top_song_artist' : top_song[0]
+    'top_song_artist' : top_song[0],
+    'itunes' : itunes_data['results']
 }
+
 # END SPOTIFY
 
 #END API Section
