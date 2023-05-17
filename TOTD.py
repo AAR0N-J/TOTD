@@ -152,4 +152,4 @@ def hashtags():
         'hashtag21', 'hashtag22', 'hashtag23', 'hashtag24', 'hashtag25',
         'hashtag26', 'hashtag27', 'hashtag28', 'hashtag29', 'hashtag30'
     ]
-    return render_template('hashtags.html', hashtags=trending_hashtags)
+    return render_template('hashtagsTrend.html', hashtags=trending_hashtags)
