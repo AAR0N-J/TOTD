@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>YouTube Trends</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {{ bootstrap.load_css() }}
+    <title>TOTD</title>
+    <style>
+        @keyframes rainbow {
+            0%   { color: red; }
+            14%  { color: orange; }
+            28%  { color: yellow; }
+            42%  { color: green; }
+            57%  { color: blue; }
+            71%  { color: indigo; }
+            85%  { color: violet; }
+            100% { color: red; }
+        }
+        h1 {
+            padding: 20px;
+            font-size: 50px;
+            animation: rainbow 4s linear infinite;
+        }
+        .footer {
+            background-color: #f5f5f5;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="p-4">
+        <h1 class="text-center bg-secondary p-5 rounded-5"> TRENDS OF YOUTUBE </h1>
+    </div>
+    <div class="p-5">
+        <div class="card rounded-5">
+            <div class="card-body">
+                <div id="video-container">
+                    <h2>#1 Trending: {{ youtube.title }}</h2>
+                    <a href="https://www.youtube.com/watch?v={{ youtube.video_id }}">
+                         <img src="{{ youtube.thumbnail }}" alt="{{ youtube.title }}" style="width: 400px; height: 300px;">
+                    </a>
+                </div>
+            <a href="{{ url_for('home') }}" class="btn btn-primary rounded-5">Home</a>
+            </div>
+        </div>
+    </div>
+    <footer class="footer bg-secondary rounded-5">
+        <div class="container">
+            <p>&copy; 2023 Team 7554, CST 205: Multimedia Design and Programming</p>
+            <p>Created by Aaron Johnson, Mikaela Lagumbay, Sebastian Ramos, and Eunice Sosa</p>
+        </div>
+    </footer>
+</body>
+</html>
