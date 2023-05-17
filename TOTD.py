@@ -109,6 +109,25 @@ def get_trending_video(api_key):
 youtube_trending = get_trending_video(api_key)
 
 # END YOUTUBE
+# HASHTAGS
+def get_trending_video():
+    url = 'https://ritetag.com/hashtag-search'
+    params = {
+        'q': 'trending',
+        'lang': 'en'
+    }
+
+    response = requests.get(url, params=params)
+    soup = BeautifulSoup(response.text, 'html.parser')
+
+    trending_info = {
+        'hashtag': soup.select_one('.hashtagContainer .tag1').text,
+        'tweets': soup.select_one('.hashtagContainer .icon-twitter').next_sibling.strip(),
+        'retweets': soup.select_one('.hashtagContainer .icon-retweet').next_sibling.strip()
+    }
+
+    return trending_info
+# END HASHTAGS
 #END API Section
 
 @app.route('/')
